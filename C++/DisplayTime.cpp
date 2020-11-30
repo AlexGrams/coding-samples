@@ -1,5 +1,6 @@
-// Lab 6.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Author: Alex Grams
+// Allows user to input a time in hours, minutes, and seconds, 
+// then outputs the time in both 12-hour and 24-hour format.
 
 #include "pch.h"
 #include <iostream>
@@ -25,6 +26,11 @@ Time::Time()
 
 }
 
+void Time::setHours(int h)
+{
+	hours = h;
+}
+
 void Time::setMinutes(int m)
 {
 	minutes = m;
@@ -35,10 +41,13 @@ void Time::setSeconds(int s)
 	seconds = s;
 }
 
+// Displays the current time in 24-hour format
 void Time::dspTime24()
 {
 	cout << setfill(' ') << setw(2) << hours << ":" << setw(2) << setfill('0') << minutes << ":" << setw(2) << seconds << endl;
 }
+
+// Displays the current time in 12-hour format
 void Time::dspTime12()
 {
 	int tempHours = hours;
@@ -54,11 +63,6 @@ void Time::dspTime12()
 		tempHours = 12;
 	}
 	cout << setfill(' ') << setw(2) << tempHours << ":" << setw(2) << setfill('0') << minutes << ":" << setw(2) << seconds << " AM" << endl;
-}
-
-void Time::setHours(int h)
-{
-	hours = h;
 }
 
 int main()

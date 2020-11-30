@@ -1,8 +1,9 @@
-//--------------------------------------------------------//
-// Name:   Alex Grams                                     //
-// Assignment: #2                                         //
-//--------------------------------------------------------//
-// Inputs 10 boxes from user and outputs if the smallest container to fit the boxes has at least 90% of its space filled
+// Author: Alex Grams
+// Takes 10 2D rectangular boxes as input from the user, then outputs the smallest 
+// rectangle which fits all boxes. If the surrounding rectangle has at least 90% of
+// its interior filled, then the boxes are considered to be efficiently arranged.
+// The user inputs the size and position of each box using the coordinates of its four
+// corners in the 2D plane.
 
 #include "pch.h"
 #include <iostream>
@@ -11,7 +12,7 @@
 
 using namespace std;
 
-// Box class
+// Box class 
 class Box
 {
 public:
@@ -238,6 +239,7 @@ float printMinimumContainer(Box *boxes)
 }
 
 /*
+SAMPLE OUTPUT:
 
 Standard tools
 0 0 0 5 14 5 14 0 5

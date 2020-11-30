@@ -1,31 +1,27 @@
 
 /**
- * Write a description of class ArrayList1YI here.
+ * Performs operations on integer, double, and string ArrayLists
+ * to demonstrate their functionality within Java
  * 
- * @author (your name) 
- * @version (a version number or a date)
- * 
+ * @author Alex Grams
  */
 import java.util.ArrayList;
 import java.util.Random;
-public class ArrayList1AG
+public class ArrayListDemo
 {
-    //Instance variables, declare 3 arrayList
     private ArrayList<Integer> age;
     private ArrayList<Double>  gpa;
     private ArrayList<String>  str;
-    private int[] age1;
     
     //Constructor
-    public ArrayList1AG()
+    public ArrayListDemo()
     {
-        Random rrr = new Random();
         age=new ArrayList<Integer>();
         gpa=new ArrayList<Double>();
         str=new ArrayList<String>();
-        age1 = new int[10];
     }
 
+    // Adds random age from 10 to 99 to array of ages
     public void addRandomAge()
     {
         Random rng = new Random();
@@ -33,6 +29,7 @@ public class ArrayList1AG
         age.add(rng.nextInt(90) + 10);
     }
   
+    // Adds a random gpa from 0.00 to 4.00 to array of GPAs
     public void addRandomGPA()
     {
         Random rng = new Random();
@@ -40,15 +37,16 @@ public class ArrayList1AG
         gpa.add(rng.nextInt(400) / 100.0);
     }
 
+    // Adds three set names and one variable name to array of names
     public void addStr(String aWord)
     {
-        str.add("Alex");
-        str.add("Jimin");
+        str.add("James");
+        str.add("Marcus");
         str.add("Bill");
         str.add( aWord );
     }
 
-
+    // Adds multiple random ages to array of ages
     public void addRandomAge(int count)
     {
         for (int i = 0; i < count; i++)
@@ -57,6 +55,7 @@ public class ArrayList1AG
         }
     }
 
+    // Adds multiple random GPAs to array of GPAs
     public void addRandomGPA(int count)
     {
         for (int i = 0; i < count; i++)
@@ -68,7 +67,6 @@ public class ArrayList1AG
     /*    
     Return the count of all the even ages 
     in the array list. 
-    Hint: The % operator may be useful.
      */
     public int evenAges() 
     {     
@@ -83,6 +81,7 @@ public class ArrayList1AG
         return count;
     }
 
+    // Removes an age at index from age array
     public void deleteAge(int index)
     {
         if (index < 0 || index >= age.size())
@@ -93,6 +92,7 @@ public class ArrayList1AG
         age.remove(index);
     }
     
+    // Adds age at index of array
     public void addAgeAtIndex(int index, int newAge)
     {
         age.add(index, newAge);
@@ -112,7 +112,7 @@ public class ArrayList1AG
         return -1;
     }
     
-
+    // Prints size of age, GPA, and string arrays
     public void printSize()
     {
         System.out.println("\nage: "+age.size());
@@ -121,6 +121,7 @@ public class ArrayList1AG
         
     }
     
+    // Prints all elements of age, GPA, and string ArrayLists
     public void printAllArrayList()
     {
         System.out.println("\nAGE arraylist:  "+age);

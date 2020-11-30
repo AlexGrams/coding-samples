@@ -1,3 +1,4 @@
+// Author: Alex Grams
 // Gets the number of lines in a file and writes the contents of the file in reverse order to another file
 
 #include "pch.h"

@@ -1,5 +1,4 @@
-# Alex Grams
-# 1163814
+# Author: Alex Grams
 # Uses OOP to calculate a loan for a car
 
 class Loan:
@@ -79,64 +78,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# Output
-##>>> 1
-##==== RESTART: C:/Users/Alex/Documents/IVC/CS 10 HW/HW5/HW5_PS3_grams_a.py ====
-##Enter yearly interest rate: 2.5
-##Enter number of years as an integer: 5
-##Enter loan amount: 1000.00
-##Enter borrower's name: John Jones
-##The loan is for John Jones
-##The montly payment is 17.75
-##The total payment is 1,064.84
-##Do you want to change the loan amount? Y for yes or enter to quit y
-##Enter new loan amount 5000
-##The loan is for John Jones
-##The montly payment is 88.74
-##The total payment is 5,324.21
-##>>> 2
-##==== RESTART: C:/Users/Alex/Documents/IVC/CS 10 HW/HW5/HW5_PS3_grams_a.py ====
-##Enter yearly interest rate: 1.5
-##Enter number of years as an integer: 10
-##Enter loan amount: 10000
-##Enter borrower's name: Joe
-##The loan is for Joe
-##The montly payment is 89.79
-##The total payment is 10,774.98
-##Do you want to change the loan amount? Y for yes or enter to quit 
-##>>> 3
-##==== RESTART: C:/Users/Alex/Documents/IVC/CS 10 HW/HW5/HW5_PS3_grams_a.py ====
-##Enter yearly interest rate: 2.5
-##Enter number of years as an integer: 20
-##Enter loan amount: 5000
-##Enter borrower's name: John Cena
-##The loan is for John Cena
-##The montly payment is 26.50
-##The total payment is 6,358.83
-##Do you want to change the loan amount? Y for yes or enter to quit 
-##>>> 4
-##==== RESTART: C:/Users/Alex/Documents/IVC/CS 10 HW/HW5/HW5_PS3_grams_a.py ====
-##Enter yearly interest rate: 10
-##Enter number of years as an integer: 5
-##Enter loan amount: 1000
-##Enter borrower's name: John Doe
-##The loan is for John Doe
-##The montly payment is 21.25
-##The total payment is 1,274.82
-##Do you want to change the loan amount? Y for yes or enter to quit 
-##>>> 5
-##==== RESTART: C:/Users/Alex/Documents/IVC/CS 10 HW/HW5/HW5_PS3_grams_a.py ====
-##Enter yearly interest rate: 3.2
-##Enter number of years as an integer: 7
-##Enter loan amount: 20000
-##Enter borrower's name: Charlie Brown
-##The loan is for Charlie Brown
-##The montly payment is 266.07
-##The total payment is 22,350.10
-##Do you want to change the loan amount? Y for yes or enter to quit y
-##Enter new loan amount 30000
-##The loan is for Charlie Brown
-##The montly payment is 399.11
-##The total payment is 33,525.15
+    

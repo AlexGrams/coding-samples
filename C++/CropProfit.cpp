@@ -1,8 +1,7 @@
-//----------------------------------------------------------------------------//
-//                                                                            //
-// Name:   Alex Grams                                                         //
-//                                                                            //
-//----------------------------------------------------------------------------//
+// Author: Alex Grams
+// Takes input of the crops a farm can grow, the cost of planting each crop,
+// the yield of each crop, and the amount gained by selling a given amount of crop.
+// Outputs what crop a farmer should plant in order to maximize profit for this season.
 
 #include "pch.h"
 #include <iostream>
@@ -123,6 +122,8 @@ void printResults(Crop crop, double minProfit, double maxProfit, double avgProfi
 }
 
 /*
+SAMPLE OUTPUT:
+
 Enter the crop name: Sweet corn
 Enter the cost, yield, price per bushel, and increase data: 45.25 173 .54 4.7
 Enter the crop name: Wheat

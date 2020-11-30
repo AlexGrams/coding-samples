@@ -2,7 +2,7 @@
    A tax return of a taxpayer in 2008.
 */
 public class TaxReturn
-{  //sec 5.4 page 149-158
+{  
    public static final int SINGLE = 1;
    public static final int MARRIED = 2;
 
@@ -26,6 +26,7 @@ public class TaxReturn
       status = aStatus;
    }
 
+   // Returns the tax payed by this person in 2008
    public double getTax()
    {  
       double tax1 = 0;

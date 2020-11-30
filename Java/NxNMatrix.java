@@ -1,18 +1,18 @@
 
 /**
- * Write a description of class NxNAG here.
+ * Creates an NxN matrix using a 1D array consisting of the numbers 
+ * 1 through N^2 and allows the user to scramble their order.
  *
  * @author Alex Grams
- * @version 11-24-20
  */
 import java.util.Random;
 
-public class NxNAG
+public class NxNMatrix
 {
     private int[] array;
     private int rows;
     
-    public NxNAG(int size)
+    public NxNMatrix(int size)
     {
         array = new int[size * size];
         rows = size;
@@ -23,6 +23,7 @@ public class NxNAG
         }
     }
     
+    // Returns a String containing all elements in the matrix ordered by row and column
     public String toString()
     {
         String result = "";
@@ -39,11 +40,13 @@ public class NxNAG
         return result;
     }
     
+    // Prints this matrix
     public void printMe()
     {
         System.out.println(toString());
     }
     
+    // Returns the sum of all elements in row r
     public int addRow(int r)
     {
         int sum = 0;
@@ -56,6 +59,7 @@ public class NxNAG
         return sum;
     }
     
+    // Returns the sum of all elements in column c
     public int addCol(int c)
     {
         int sum = 0;
@@ -87,7 +91,7 @@ public class NxNAG
         }
     }
     
-    // Adds digits from top left to bottom right
+    // Returns the sum of all digits from top left to bottom right
     public int addDiag1()
     {
         int sum = 0;
@@ -100,7 +104,7 @@ public class NxNAG
         return sum;
     }
     
-    // Adds digits from top right to bottom left
+    // Returns the sum of all digits from top right to bottom left
     public int addDiag2()
     {
         int sum = 0;
