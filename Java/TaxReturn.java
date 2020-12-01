@@ -1,5 +1,7 @@
 /**
-   A tax return of a taxpayer in 2008.
+* Calculates the tax return of a taxpayer in 2008.
+*
+* @author Alex Grams
 */
 public class TaxReturn
 {  

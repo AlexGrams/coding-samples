@@ -1,4 +1,5 @@
 # Author: Alex Grams
+#
 # Tests performing multiple operations on an array of integers
 
 # Define constant variables. 

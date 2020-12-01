@@ -1,4 +1,5 @@
 # Author: Alex Grams
+#
 # Uses OOP to calculate a loan for a car
 
 class Loan:

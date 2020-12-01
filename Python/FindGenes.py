@@ -1,4 +1,5 @@
 # Author: Alex Grams
+#
 # Finds gene sequences in inputted genomes.
 # A gene is a series of bases beginning with ATG and ending with TAG, TAA, or TGA.
 

@@ -1,4 +1,5 @@
 # Author: Alex Grams
+#
 # Performs operations such as printing key-value pairs and finding the average
 # of a dictionary containing letter grades of students in a classroom.
 
